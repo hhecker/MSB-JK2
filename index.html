@@ -14,7 +14,7 @@
     const btnLoad = document.getElementById("btnLoad")
     btnLoad.addEventListener("click", getContent)
     async function getContent() {
-        const url = "https://api.github.com/repos/hhecker/asciitest/contents/Test.adoc"
+        const url = "https://api.github.com/repos/hhecker/hhecker.github.io/contents/Test.adoc"
         const response = await fetch(url)
         const result = await response.json()
         console.log(result)
