@@ -1,0 +1,19 @@
+﻿= Test AsciiDoc
+
+:toc: left
+
+== &Uuml;bersicht
+
+blablabla
+
+== Platform Capabilities
+
+NOTE: *Wann sollte ich dies lesen?*
+
+test test test
+
+
+
+
+
+
