@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>github - Test</title>
+</head>
+<body>
+    <h1>API Discovery - Test</h1>
+    <button id = 'btnLoad'>Load</button>
+
+    <script>
+    const btnLoad = document.getElementById("btnLoad")
+    btnLoad.addEventListener("click", getContent)
+    async function getContent() {
+        const url = "https://api.github.com/repos/hhecker/asciitest/contents/Test.adoc"
+        const response = await fetch(url)
+        const result = await response.json()
+        console.log(result)
+        window.open(result.download_url)
+    }
+    </script>
+</body>
+</html>
